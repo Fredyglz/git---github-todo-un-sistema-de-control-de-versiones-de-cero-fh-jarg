@@ -5,7 +5,7 @@ En este repositorio podras encontrar todos los codigos y proyectos desarrollados
 ## Git - Fundamentos
 **_Código:_** demo 01: https://github.com/Fredyglz/git-demo-01, demo 02: https://github.com/Fredyglz/git-demo-02
 
-## APUNTES
+## Apuntes
 
 ### Comados  
 
