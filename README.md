@@ -1,4 +1,9 @@
-# git-\+-github-todo-un-sistema-de-control-de-versiones-de-cero-fh-jarg
+# GIT + GitHub: Todo un sistema de control de versiones de cero - Curso
+
+En este repositorio podras encontrar todos los codigos y proyectos desarrollados en el curso de 'GIT + GitHub: Todo un sistema de control de versiones de cero' con Fernando Herrera disponible en la plataforma de Udemy lo cuales estaran divididos por secciones.
+
+## Git - Fundamentos
+**_Código:_** demo 01: https://github.com/Fredyglz/git-demo-01, demo 02: https://github.com/Fredyglz/git-demo-02
 
 ## APUNTES
 
