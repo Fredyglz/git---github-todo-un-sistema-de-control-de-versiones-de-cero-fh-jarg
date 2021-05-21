@@ -5,10 +5,17 @@ En este repositorio podras encontrar todos los codigos y proyectos desarrollados
 ## Git - Fundamentos
 **_Código:_** demo 01: https://github.com/Fredyglz/git-demo-01, demo 02: https://github.com/Fredyglz/git-demo-02
 
-## Apuntes
+## Un poco más allá de los fundamentos de GIT
+**_Código:_** demo 03: https://github.com/Fredyglz/git-demo-03, demo 04: https://github.com/Fredyglz/git-demo-04, demo 05 - tarea: https://github.com/Fredyglz/git-demo-05
 
-### Comados  
+## Ramas, uniones, conflictos y tags
+**_Código:_** demo 06: https://github.com/Fredyglz/git-demo-06
 
+# Apuntes
+
+## Comados  
+
+### Fundamentos
 **git --version**  
 Sirven para saber la version de github que estamos utilizando
 
@@ -93,3 +100,87 @@ Revisa y lee el historial de todo lo que le sucede al repositorio pero solo regr
 **git config --global alias.<alias\> "<comando comando\>"**    
 Configura alias para agreviar una lista de comandos en uno solo  
 _Ej. git config --global alias.lg "log --oneline --decorate --all --graph"_
+
+### Un poco mas allá de los fundamentos de GIT
+**git diff**  
+Muestra los cambios que hubo en los archivos antes de mandarlos al stage
+
+**git diff --staged**  
+Muestra los cambios que hubo en los archivos antes de mandarlos al stage
+
+**git reset HEAD <nombre_archivo\>**  
+Quita del stage al archivo especificado
+
+**git checkout -- README.md**  
+Reconstruye el archivo a como estaba en el ultimo commit
+
+**git commit -am "<descripción_del_commit\>"**  
+Agrega al stage y realiza el commit de los archivos de manera simultanea
+
+**git --amend -m "<descripción_del_commit\>"**  
+Restablecemos la descipcion del ultimo commit registrado
+
+**git reset --soft HEAD^**  
+Cambia mi HEAD a un commit anterior proximo dejando los cambios en el stage
+
+**git reset --soft <hash_commit\>**  
+Cambia mi HEAD a un commit con el hash especificado dejando los cambios en el stage
+
+**git reset --mixed <hash_commit\>**  
+Cambia mi HEAD a un commit con el hash especificado dejando los cambios antes de mandarlos al stage
+
+**git reset --hard <hash_commit\>**  
+Cambia mi HEAD a un commit con el hash especificado destruyendo los cambios agregados
+
+**git reflog**  
+Muestra todos los cambios en el tiempo registrados por git
+
+**git mv <nombre_actual\> <nombre_nuevo>**  
+Renombra un archivo manteniendo sus cambios
+
+**git rm <nombre_actual\>**  
+Elimina un archivo
+
+**git add -u**  
+Agrega al stage todos los archivos modificados y eliminados
+
+### Ramas, uniones, conflictos y tags
+
+**git branch <nombre_rama\>**  
+Crea una nueva rama en el repositorio
+
+**git branch**  
+Lista el nombre de las ramas marcando con verde en la que me encuentro actualmente
+
+**git checkout <nombre_rama\>**  
+Me mueve a la rama seleccionada
+
+**git diff <nombre_rama> <nombre_rama_2>**  
+Muestra las diferencias entre las dos ramas
+
+**git merge <nombre_rama_a_unir\>**  
+Con este comando, primero tenemos que estar en la rama donde queremos que se unan las modificaciones viniendo de otra, esa otra seria la que se manda como parametro en el comando
+
+**git branch -d <nombre_rama\>**  
+Elimina la rama seleccionada, usualmente se usa cuando ya se realizo un merge con su contenido a otra rama y esta ya no se va a utilizar
+
+**git checkout -b <nombre_rama\>**  
+Crea una nueva rama y automaticamente me mueve a ella
+
+**git tag <nombre_tag\>**  
+Crea un nuevo tag
+
+**git tag**  
+Lista todos los tag creados
+
+**git tag -d <nombre_tag\>**  
+Elimina un tag especifico 
+
+**git tag -a v<numero_version\> -m <mensaje>**  
+Crea tags mas especificos
+
+**git tag -a v<numero_version\> <hash_commit> -m <mensaje>**  
+Crea tags mas especificos en un commit especifico
+
+**git show <tag_anotado_(-a)>**  
+Muestra los detalles de un tag especifico
