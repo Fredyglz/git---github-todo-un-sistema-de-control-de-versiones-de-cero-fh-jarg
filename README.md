@@ -184,3 +184,67 @@ Crea tags mas especificos en un commit especifico
 
 **git show <tag_anotado_(-a)>**  
 Muestra los detalles de un tag especifico
+
+### Git Stash y Git Rebase - Para realizar cambios de emergencia
+**git stash**  
+Permite cambiar de rama sin confirmar la rama actual.
+
+**git stash save**  
+Permite cambiar de rama sin confirmar la rama actual.
+
+**git stash list**  
+Lista todos los trabajos en progreso que hay
+
+**git stash pop**  
+Extrae el ultimo elemento del stack de stashes y lo elimina del mismo
+
+**git stash apply**  
+Extrae el ultimo elemento del stack de stashes y lo deja en la lista de stashes
+
+**git stash apply stash@{<id\>}**  
+Extrae un stash con id especifico del stack de stashes y lo deja en la lista de stashes
+
+**git stash drop**  
+Elimina el ultimo elemento del stack de stashes
+
+**git stash drop stash@{<id\>}**  
+Elimina un stash con id especifico del stack de stashes
+
+**git stash save --keep-index**  
+Guarda todo menos los archivos en el stage o en el escenario
+
+**git stash save --include-untracked**  
+Incluye todo los archivos, junto a los que git no le da seguimiento
+
+**git stash list --stat**  
+Muestra mas información de cada una de las entradas del stash
+
+**git show stash**
+Muestra mas informacion de los cambios de las lineas que se hizo en el ultimo stash
+
+**git show stash@{<id\>}**
+Muestra mas informacion de los cambios de las lineas que se hizo en el ultimo stash
+
+**git stash save "<mensaje\>"**
+Agrega mensajes a los stash
+
+**git stash clear**  
+Borra todas las entradas que hay en el stash
+
+**git rebase <nombre_rama_a_rebasar\>**  
+Se utiliza para aplicar una secuencia de confirmaciones de distintas ramas en una confirmación final
+
+**git rebase -i HEAD~<numero_de_ultimos_commits_requeridos\>**  
+Se utiliza para hacer un rebase interactivo 
+
+**squash**  
+Une los commits 
+
+**reward**  
+Edita el mensaje de los commits
+
+**edit**  
+Separa un commit
+
+**git rebase --continue**  
+Reasigna el HEAD
