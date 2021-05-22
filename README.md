@@ -11,6 +11,9 @@ En este repositorio podras encontrar todos los codigos y proyectos desarrollados
 ## Ramas, uniones, conflictos y tags
 **_Código:_** demo 06: https://github.com/Fredyglz/git-demo-06
 
+## Git Stash y Git Rebase - Para realizar cambios de emergencia  
+**_Código:_** demo 07: https://github.com/Fredyglz/git-demo-07, demo 08: https://github.com/Fredyglz/git-demo-08
+
 # Apuntes
 
 ## Comados  
